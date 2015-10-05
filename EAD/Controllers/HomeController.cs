@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace EAD.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : EadBaseController
     {
         public ActionResult Index()
         {

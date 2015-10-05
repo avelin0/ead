@@ -12,7 +12,7 @@ using Microsoft.AspNet.Identity;
 namespace EAD.Controllers
 {
     [Authorize]
-    public class StudentsController : Controller
+    public class StudentsController : EadBaseController
     {
         private EadContext db = new EadContext();
 
@@ -22,29 +22,23 @@ namespace EAD.Controllers
         {
             return View(db.Students.ToList());
         }
-
+        
         // GET: Students/Details/5
-        public ActionResult Details(string id)
+        [Authorize]
+        public ActionResult Details()
         {
+            string id = User.Identity.GetUserId();
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            if (User.Identity.GetUserId() == id)
+            
+            Student student = db.Students.Find(id);
+            if (student == null)
             {
-
-
-                Student student = db.Students.Find(id);
-                if (student == null)
-                {
-                    return HttpNotFound();
-                }
-                return View(student);
+                return HttpNotFound();
             }
-            else
-            {
-                return RedirectToAction("NotYourself");
-            }
+            return View(student);
         }
 
         public ActionResult NotYourself()
@@ -52,6 +46,8 @@ namespace EAD.Controllers
             return View();
         }
 
+        // creation is associated with  registering an account
+        /*
         // GET: Students/Create
         public ActionResult Create()
         {
@@ -74,10 +70,14 @@ namespace EAD.Controllers
 
             return View(student);
         }
-
+        */
+         
         // GET: Students/Edit/5
-        public ActionResult Edit(string id)
+        [Authorize]
+        public ActionResult Edit()
         {
+            string id = User.Identity.GetUserId();
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);

@@ -13,7 +13,7 @@ using EAD.Models;
 namespace EAD.Controllers
 {
     [Authorize]
-    public class AccountController : Controller
+    public class AccountController : EadBaseController
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
