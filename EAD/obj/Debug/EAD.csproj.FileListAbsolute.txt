@@ -108,6 +108,3 @@ C:\Users\rodri\ead\EAD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.csprojResolveAssemblyReference.cache
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.dll
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.pdb
-C:\Users\rodri\ead\EAD\obj\Debug\EAD.Migrations.InitialCreate.resources
-C:\Users\rodri\ead\EAD\obj\Debug\EAD.csproj.GenerateResource.Cache
-C:\Users\rodri\ead\EAD\obj\Debug\EAD.Migrations.InitialCreate1.resources
