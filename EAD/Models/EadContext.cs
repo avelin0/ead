@@ -9,5 +9,6 @@ namespace EAD.Models
     public class EadContext : DbContext
     {
         public DbSet<Student> Students { get; set; }
+        public DbSet<Enrollment> Enrollments { get; set; }
     }
 }
