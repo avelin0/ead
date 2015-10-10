@@ -49,8 +49,12 @@ namespace EAD.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "CourseID,CreatorID,Name,CreationDate,Level")] Course course)
+        [Authorize]
+        public ActionResult Create(CourseViewModel model)
         {
+            Course course = new Course { Name = model.Name, Level = model.Level, CreatorID = User.Identity.GetUserId(), CreationDate = DateTime.Today };
+
+
             if (ModelState.IsValid)
             {
                 db.Courses.Add(course);
