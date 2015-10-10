@@ -108,3 +108,7 @@ C:\Users\rodri\ead\EAD\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.csprojResolveAssemblyReference.cache
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.dll
 C:\Users\rodri\ead\EAD\obj\Debug\EAD.pdb
+C:\Users\andre\Documents\Visual Studio 2013\Projects\ead\EAD\obj\Debug\EAD.Migrations.InitialCreate.resources
+C:\Users\andre\Documents\Visual Studio 2013\Projects\ead\EAD\obj\Debug\EAD.csproj.GenerateResource.Cache
+C:\Users\andre\Documents\Visual Studio 2013\Projects\ead\EAD\obj\Debug\EAD.Migrations.Teste.resources
+C:\Users\andre\Documents\Visual Studio 2013\Projects\ead\EAD\obj\Debug\EAD.Migrations.AddedCourse.resources
