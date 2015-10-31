@@ -21,5 +21,7 @@ namespace EAD.Models
         public DateTime CreationDate { get; set; }
 
         public Level Level { get; set; }
+
+        public virtual ICollection<Enrollment> Enrollments { get; set; }
     }
 }

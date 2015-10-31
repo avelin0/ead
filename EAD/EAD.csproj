@@ -167,25 +167,16 @@
     <Compile Include="Controllers\EnrollmentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ModuloesController.cs" />
+    <Compile Include="Controllers\PaginasController.cs" />
     <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\TopicoesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201510042353078_InitialCreate.cs" />
-    <Compile Include="Migrations\201510042353078_InitialCreate.Designer.cs">
-      <DependentUpon>201510042353078_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510102134269_Teste.cs" />
-    <Compile Include="Migrations\201510102134269_Teste.Designer.cs">
-      <DependentUpon>201510102134269_Teste.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510102223089_Added Course.cs" />
-    <Compile Include="Migrations\201510102223089_Added Course.Designer.cs">
-      <DependentUpon>201510102223089_Added Course.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201510102246342_Added Course 2.cs" />
-    <Compile Include="Migrations\201510102246342_Added Course 2.Designer.cs">
-      <DependentUpon>201510102246342_Added Course 2.cs</DependentUpon>
+    <Compile Include="Migrations\201510311931049_InitialCreate1.cs" />
+    <Compile Include="Migrations\201510311931049_InitialCreate1.Designer.cs">
+      <DependentUpon>201510311931049_InitialCreate1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -195,7 +186,10 @@
     <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Modulo.cs" />
+    <Compile Include="Models\Pagina.cs" />
     <Compile Include="Models\Student.cs" />
+    <Compile Include="Models\Topico.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -272,6 +266,21 @@
     <Content Include="Views\Courses\Edit.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
     <Content Include="Views\Courses\NoPermissionToEdit.cshtml" />
+    <Content Include="Views\Moduloes\Create.cshtml" />
+    <Content Include="Views\Moduloes\Delete.cshtml" />
+    <Content Include="Views\Moduloes\Details.cshtml" />
+    <Content Include="Views\Moduloes\Edit.cshtml" />
+    <Content Include="Views\Moduloes\Index.cshtml" />
+    <Content Include="Views\Topicoes\Create.cshtml" />
+    <Content Include="Views\Topicoes\Delete.cshtml" />
+    <Content Include="Views\Topicoes\Details.cshtml" />
+    <Content Include="Views\Topicoes\Edit.cshtml" />
+    <Content Include="Views\Topicoes\Index.cshtml" />
+    <Content Include="Views\Paginas\Create.cshtml" />
+    <Content Include="Views\Paginas\Delete.cshtml" />
+    <Content Include="Views\Paginas\Details.cshtml" />
+    <Content Include="Views\Paginas\Edit.cshtml" />
+    <Content Include="Views\Paginas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,17 +294,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201510042353078_InitialCreate.resx">
-      <DependentUpon>201510042353078_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510102134269_Teste.resx">
-      <DependentUpon>201510102134269_Teste.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510102223089_Added Course.resx">
-      <DependentUpon>201510102223089_Added Course.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201510102246342_Added Course 2.resx">
-      <DependentUpon>201510102246342_Added Course 2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510311931049_InitialCreate1.resx">
+      <DependentUpon>201510311931049_InitialCreate1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

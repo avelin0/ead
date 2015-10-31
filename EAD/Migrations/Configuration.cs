@@ -10,7 +10,6 @@ namespace EAD.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "EAD.Models.EadContext";
         }
 
         protected override void Seed(EAD.Models.EadContext context)
